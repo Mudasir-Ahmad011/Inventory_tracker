@@ -62,7 +62,7 @@ const filteredInventory = inventory.filter(item =>
 );
 return (
     <>
-      <Box width="100vw" p={1} bgcolor="#2A4747" display="flex" flexDirection="row" justifyContent="space-between" alignItems="center"><Typography variant="h4" color="#61D095">Inventory Store</Typography>
+      <Box width="100vw" height="10vh" p={1} bgcolor="#2A4747" display="flex" flexDirection="row" justifyContent="space-between" alignItems="center"><Typography variant="h4" color="#61D095">Inventory Store</Typography>
       <Stack width="400px" direction="row">
        <Box width="100%" alignItems="center" display="flex" justifyContent="center" gap={1} color="#FFFFFF">
           <TextField
@@ -107,7 +107,7 @@ return (
         >
           <Typography variant="h2" color="#333">Inventory Items</Typography>
         </Box>
-     <Stack width="800px" height="460px" spacing={0} overflow="auto">
+     <Stack width="800px" height="460px" overflow="auto">
       {filteredInventory.map(({name,quantity})=>(
         <Box key={name} width="100%" minHeight="150px" display="flex" alignItems="center" justifyContent="space-between" bgcolor="#f0f0f0" p={5}>
          <Typography variant="h3" color="#333" textAlign="center">
