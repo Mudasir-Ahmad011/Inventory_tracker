@@ -96,7 +96,7 @@ return (
         </Box>
       </Modal>
       
-      <Box border="1px solid #333">
+      <Box border="1px solid #333" bgcolor="lightgray">
         <Box
         width="800px"
         height="100px"
@@ -107,7 +107,7 @@ return (
         >
           <Typography variant="h2" color="#333">Inventory Items</Typography>
         </Box>
-     <Stack width="800px" height="460px" overflow="auto">
+     <Stack width="800px" height="460px" overflow="auto" spacing={1}>
       {filteredInventory.map(({name,quantity})=>(
         <Box key={name} width="100%" minHeight="150px" display="flex" alignItems="center" justifyContent="space-between" bgcolor="#f0f0f0" p={5}>
          <Typography variant="h3" color="#333" textAlign="center">
